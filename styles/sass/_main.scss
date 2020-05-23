@@ -1,0 +1,106 @@
+@import'variables';
+@import'fonts';
+
+.homeContainer{
+    position: absolute;
+    width:100%;
+    top:40%;
+    left:0;
+    img{
+        float:left;
+        min-width:40%;
+        min-height: 40%;
+        max-width: 400px;
+        max-height: 400px;
+        padding-right:20px;
+    }
+}
+
+.homeContainer span{
+    font-size:2rem;
+    color:#fff;
+}
+
+.homeContainer2{
+    padding: 10% 0;
+}
+
+.homeContainer2>div{
+    display:flex;
+    justify-content: space-between;
+    img{
+        width:300px;
+        height: 300px;
+        box-shadow: -20px 20px $green;
+        margin-left:30px;
+    }
+}
+
+.gridContainer>div{
+    display:flex;
+    padding:10% 0;
+    img{
+        padding: 0 10px;
+    }
+}
+
+.gridContainer2{
+    padding: 0 0 5% 0;
+}
+
+.blockRow1,
+.blockRow2{
+    display:flex;
+    .block{
+        width:50%;
+    }
+}
+
+aside{
+    height:auto;
+}
+
+.homeRow1,
+.homeRow2{
+    display:flex;
+    position: relative;
+    img{
+        box-shadow: 10px 10px $gold;
+        position: absolute;
+        width:50%;
+        max-width:700px;
+    }
+    .pic2 img{
+        box-shadow: -10px 10px $gold;
+    }
+}
+
+.pic1,
+.text,
+.pic2,
+.text2{
+    width:50%;
+}
+
+.text,
+.text2{
+    padding:5%;
+}
+
+.text2{
+    text-align: right;
+    p:nth-child(2){
+        text-align:left;
+    }
+}
+
+.pic1 img{
+    width:40%;
+    top:-5%;
+}
+
+.pic2 img{
+    width:40%;
+    bottom:-10%;
+    right:0;
+}

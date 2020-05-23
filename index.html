@@ -4,84 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" href="./assets/favicon.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
     <title>Mind'n'Soul Home</title>
     <link rel="stylesheet" href="./styles/styles.css" type="text/css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="home">
+        <nav class="wrapper">
             <ul>
-                <li><a href="">Mindn'Soul</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="./index.html">Mindn'Soul</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./form.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="homeContainer">
+        <div class="homeContainer clearfix">
             <img src="./assets/home2.jpg" alt="person meditating">
-            <h3>welcome to</h3>
-            <h2>Mindn'Soul</h2>
-        </div>
-        <div class="homeContainer2">
-            <h3>New Adventure</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non culpa architecto fuga exercitationem accusamus suscipit facere iusto reiciendis! Amet voluptatibus voluptas dolore labore asperiores optio officia molestiae facilis, consequuntur quam aut dolor atque pariatur odio illum vitae. Quas, aperiam?</p>
-            <button>Find Out More</button>
-            <img src="./assets/home3.jpg" alt="group of people stretching">
+            <span>welcome to</span>
+            <h1>Mindn'Soul</h1>
         </div>
     </header>
+    <div class="homeContainer2">
+        <div class="flexboxContainer wrapper">
+            <div>
+                <h3>New Adventure</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non culpa architecto fuga exercitationem accusamus suscipit facere iusto reiciendis! Amet voluptatibus voluptas dolore labore asperiores optio officia molestiae facilis, consequuntur quam aut dolor atque pariatur odio illum vitae. Quas, aperiam?</p>
+                <button>Find Out More</button>
+            </div>
+            <div>
+                <img src="./assets/home3.jpg" alt="group of people stretching">
+            </div>
+        </div>
+    </div>    
     <main>
         <div class="gridContainer">
-            <img src="./assets/home4.jpg" alt="lady upside down">
-            <img src="./assets/home5.jpg" alt="couple stretching together">
-            <img src="./assets/home6.jpg" alt="lady meditating by sea">
+            <div class="wrapper">
+                <img src="./assets/home4.jpg" alt="lady upside down">
+                <img src="./assets/home5.jpg" alt="couple stretching together">
+                <img src="./assets/home6.jpg" alt="lady meditating by sea">
+            </div>
         </div>
-        <div class="gridcontainter2">
-            <div class="block">
-                <h3>customized offers</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae distinctio, error labore quibusdam sit sequi excepturi molestias in mollitia nulla.</p>
+        <div class="gridContainer2 wrapper">
+            <div class="blockRow1">
+                <div class="block">
+                    <i class="fas fa-home greenIcon"></i>
+                    <h3 class="greenIcon">customized offers</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae distinctio, error labore quibusdam sit sequi excepturi molestias in mollitia nulla.</p>
+                </div>
+                <div class="block">
+                    <h3 class="greenIcon2">community</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ducimus numquam accusamus atque aperiam blanditiis placeat alias porro, doloribus magnam!</p>
+                </div>
             </div>
-            <div class="block">
-                <h3>community</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ducimus numquam accusamus atque aperiam blanditiis placeat alias porro, doloribus magnam!</p>
-            </div>
-            <div class="block"></div>
-                <h3>Blog</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptates obcaecati ipsa, reiciendis vel eligendi repudiandae fugiat magni cupiditate ea.</p>
-            <div class="block">
-                <h3>Get in Touch</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque debitis suscipit alias rerum deleniti doloremque ratione. Laboriosam, modi commodi?</p>
+            <div class="blockRow2">
+                <div class="block">
+                    <h3 class="greenIcon3">Blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptates obcaecati ipsa, reiciendis vel eligendi repudiandae fugiat magni cupiditate ea.</p>
+                </div>
+                <div class="block">
+                    <h3 class="greenIcon4">Get in Touch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque debitis suscipit alias rerum deleniti doloremque ratione. Laboriosam, modi commodi?</p>
+                </div>
             </div>
         </div>
     </main>
     <aside>
         <div class="homeRow1">
-            <img src="./assets/home7.jpg" alt="three women laughing">
-            <div class="part1">
+            <div class="pic1">
+                <img src="./assets/home7.jpg" class="pos1" alt="three women laughing">
+            </div>
+            <div class="text">
                 <h4>Group Programs</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, labore. Quia ipsum, consequatur nemo quos suscipit earum amet modi quaerat iste accusantium qui, nam ea vero accusamus temporibus? In, natus.</p>
                 <button>Read More</button>
             </div>
         </div>
         <div class="homeRow2">
-            <div class="part2">
+            <div class="text2">
                 <h4>Group Programs</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, labore. Quia ipsum, consequatur nemo quos suscipit earum amet modi quaerat iste accusantium qui, nam ea vero accusamus temporibus? In, natus.</p>
                 <button>Read More</button>
             </div>
-            <img src="./assets/home8.jpg" alt="man stretching">
+            <div class="pic2">
+                <img src="./assets/home8.jpg" class="pos2" alt="man stretching">
+            </div>
         </div>
-        <img src="./assets/home9.jpg" alt="group of people happy">
     </aside>
+    <div>
+        <img src="./assets/home9.jpg" alt="group of people happy">
+    </div>
+    
     <footer>
-        <div class="footerContainer">
+        <div class="footerContainer wrapper">
             <h4>Free trials</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, recusandae. Quidem voluptatibus unde neque consectetur fuga labore a sapiente. Provident, similique corrupti. Eius cum, aliquam corrupti odit vel nesciunt quibusdam cupiditate quisquam, iste quas quod debitis facere molestias omnis suscipit atque earum minus ad eligendi dicta dolor voluptatum. Officia, consequatur!</p>
             <button>Find Out More</button>
         </div>
     </footer>
     <div class="copyright">
-        <p>Copyright &#169; HackerYou </p>
+        <p>Copyright &#169; 2019 HackerYou </p>
     </div>
 </body>
 </html>

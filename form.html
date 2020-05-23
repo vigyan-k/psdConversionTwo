@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mind'N'Soul ContactUs</title>
+    <link type="image/png" href="./assets/favicon.png" rel="icon">
+    <title>Mind'N'Soul Form</title>
     <link rel="stylesheet" href="./styles/styles.css" type="text/css">
 </head>
 <body>
@@ -24,16 +25,27 @@
     <aside>
         <div class="flexContainerForm">
             <div class="flexContainerFormLeft">
-                <form action=""></form>
+                <form action="">
+                    <fieldset class="basicInfo">
+                        <label class="visuallyHidden" for="name">Name</label>
+                        <input type="name" name="" id="name" placeholder="Name" required>
+
+                        <label class="visuallyHidden" for="email">Email</label>
+                        <input type="email" name="" id="email" placeholder="Email address" required>
+
+                        <label class="visuallyHidden" for="textArea">TextArea</label>
+                        <input type="textArea" name="" id="textArea" placeholder="Message" required>
+
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
             </div>
             <div class="flexContainerFormRight">
                 <ul class="social">
-                    <li>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
                 </ul>
                 <p>info@email.com</p>
                 <p>123-456-7890</p>

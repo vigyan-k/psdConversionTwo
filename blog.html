@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" href="./assets/favicon.png" rel="icon">
     <title>Mind'N'Soul Blog</title>
     <link rel="stylesheet" href="./styles/styles.css" type="text/css">
 </head>
@@ -22,7 +23,7 @@
         <h2>Blog</h2>
         <div class="blogContainer">
             <div class="blogContainerLeft">
-                <img src="" alt="">
+                <img src="./assets/blog2.jpg" alt="brass gong">
                 <h3>Come and discover our space</h3>
                 <p>Monday May 5th, 2019 by Saron</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis tempora, totam mollitia voluptate magni dolore dolor odit dolorem, ex alias earum! Dicta maxime quis dolores beatae ab iste tenetur sequi!</p>
@@ -30,7 +31,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque alias asperiores illo id quae minus, veniam dolore et vitae ex sequi aspernatur aliquid voluptas quia culpa enim, labore autem.</p>
             </div>
             <div class="blogContainerRight">
-                <img src="" alt="">
+                <img src="./assets/blog3.jpg" alt="balanced rocks">
                 <h4>Our mission</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vitae eum maxime similique aspernatur aut?</p>
                 <h4>Recent Posts</h4>
@@ -47,19 +48,32 @@
         <h2>Comments:</h2>
         <div class="asideContainer">
             <div class="blogRow1">
-                <img src="" alt="">
+                <img src="./assets/blog4.jpg" alt="portait of man">
                 <p>Tuesday October 9th, 2019 by Davin</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta inventore a cupiditate dolore officiis molestiae, facere esse dolorem, consectetur distinctio excepturi. Accusantium molestias incidunt dolores suscipit modi reiciendis necessitatibus.</p>
             </div>
             <div class="blogRow2">
-                <img src="" alt="">
+                <img src="./assets/blog5.jpg" alt="two zebras">
                 <p>Wednesday October 10th, 2019 by Lisa</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam blanditiis officiis fugiat unde esse ratione earum autem voluptates nam aspernatur, obcaecati molestiae dolorem reprehenderit perferendis recusandae enim voluptatem odit!</p>
             </div>
         </div>
     </aside>
     <footer>
-        <form action=""></form>
+        <form action="">
+            <fieldset>
+                <label class="visuallyHidden" for="name">Name</label>
+                <input type="name" name="" id="name" placeholder="Name" required>
+
+                <label class="visuallyHidden" for="email">Email</label>
+                <input type="email" name="" id="email" placeholder="Email address" required>
+
+                <label class="visuallyHidden" for="textArea">TextArea</label>
+                <input type="textArea" name="" id="textArea" placeholder="Message" required>
+
+                <button type="submit">Post Comment</button>
+            </fieldset>
+        </form>
     </footer>
     <div class="copyright">
         <p>Copyright &#169; HackerYou </p>

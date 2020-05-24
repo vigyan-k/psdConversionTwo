@@ -20,24 +20,20 @@
                 <li><a href="./form.html">Contact</a></li>
             </ul>
         </nav>
+        <h1 class="wrapper">Get in Touch</h1>
     </header>
     <main>
-        <h1 class="wrapper">Get in Touch</h1>
-    </main>
-    <aside>
         <div class="flexContainerForm wrapper">
             <div class="flexContainerFormLeft">
                 <form action="">
                     <fieldset class="basicInfo">
-                        <label class="visuallyHidden" for="name">Name</label>
-                        <input type="name" name="" id="name" placeholder="Name" required>
-
-                        <label class="visuallyHidden" for="email">Email</label>
-                        <input type="email" name="" id="email" placeholder="Email address" required>
-
-                        <label class="visuallyHidden" for="textArea">TextArea</label>
-                        <input type="textArea" name="" id="textArea" placeholder="Message" required>
-
+                        <div class="formRow">
+                            <label class="visuallyHidden" for="name">Name</label>
+                            <input type="text" name="" id="name" placeholder="Name" required>
+                            <label class="visuallyHidden" for="email">Email</label>
+                            <input type="email" name="" id="email" placeholder="Email address" required>
+                        </div>
+                        <textarea class="input2" name="" id="textarea" cols="70" rows="10"required placeholder="Message"></textarea>
                         <button type="submit">Submit</button>
                     </fieldset>
                 </form>
@@ -57,7 +53,7 @@
                 <p>M5V2D5</p>
             </div>
         </div>
-    </aside>
+    </main>
     <footer>
     </footer>
     <div class="copyright">

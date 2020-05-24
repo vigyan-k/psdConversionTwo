@@ -303,6 +303,14 @@ header.blog {
 
 header.form {
   background-image: url("../assets/form1.jpg");
+  height: 40vh;
+  position: relative;
+}
+
+header.form h1 {
+  position: absolute;
+  right: 5%;
+  top: 40%;
 }
 
 h1,
@@ -389,7 +397,7 @@ h4 {
 }
 
 .gridContainer > div img {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .gridContainer2 {
@@ -398,6 +406,7 @@ h4 {
 
 .blockRow1,
 .blockRow2 {
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,9 +475,98 @@ aside {
   right: 0;
 }
 
+.flexContainerForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10% 0;
+  height: 60vh;
+}
+
+.flexContainerFormLeft {
+  width: 60%;
+  position: relative;
+}
+
+.flexContainerFormRight p {
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #262725;
+  -webkit-box-shadow: 15px 15px #FFC600;
+          box-shadow: 15px 15px #FFC600;
+  padding: 3%;
+  position: absolute;
+  top: -85%;
+  width: 700px;
+  height: 400px;
+}
+
+.formRow input[type=text],
+.formRow input[type=email] {
+  color: #FAFFFE;
+  margin: 0 0 7% 10px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #FFC600;
+  font-size: 1.2rem;
+  font-weight: 100;
+  height: 5vh;
+  padding: 3%;
+}
+
+.formRow input[type=text]:focus,
+.formRow input[type=email]:focus,
+textarea:focus {
+  background-color: #1E140E;
+  border: dotted 2px #FAFFFE;
+}
+
+textarea {
+  background: transparent;
+  border: 2px solid #FFC600;
+  color: #FAFFFE;
+  height: 30vh;
+  margin-bottom: 5%;
+  font-family: 'lato';
+  padding: 5%;
+}
+
+.basicInfo button {
+  width: 80%;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+ul.social a {
+  margin-bottom: 20px;
+  color: #FFC600;
+  font-size: 2rem;
+  display: inline-block;
+}
+
 .footerContainer {
   padding: 10% 0;
   text-align: center;
+}
+
+.footerContainer p {
+  padding-bottom: 5%;
 }
 
 .copyright {
@@ -528,12 +626,20 @@ a {
   border: 4px solid transparent;
 }
 
-a:hover {
-  border-bottom: solid 4px #FFC600;
+a:hover,
+a:focus {
+  color: #FFC600;
 }
 
 .icon {
-  font-size: 4rem;
+  display: inline-block;
+  font-size: 1.5rem;
   color: white;
-  background: #FFC600;
+  padding: 10px 20px 0 0;
+}
+
+.fas {
+  background: #555F02;
+  border-radius: 50%;
+  padding: 10px;
 }

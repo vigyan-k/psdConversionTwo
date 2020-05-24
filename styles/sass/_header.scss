@@ -39,5 +39,12 @@ header.blog{
 }
 
 header.form{
-    background-image:url('../assets/form1.jpg')
+    background-image:url('../assets/form1.jpg');
+    height:40vh;
+    position:relative;
+    h1{
+        position:absolute;
+        right:5%;
+        top:40%;
+    }
 }

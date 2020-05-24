@@ -36,6 +36,12 @@ header.home{
 
 header.blog{
     background-image:url('../assets/blog1.jpg');
+    position: relative;
+    h1{
+        position: absolute;
+        left:10%;
+        top:40%;
+    }
 }
 
 header.form{
@@ -44,7 +50,7 @@ header.form{
     position:relative;
     h1{
         position:absolute;
-        right:5%;
+        left:5%;
         top:40%;
     }
 }

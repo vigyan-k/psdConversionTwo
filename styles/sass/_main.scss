@@ -108,6 +108,79 @@ aside{
     right:0;
 }
 
+// styles for blog.html
+
+.blogContainer{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    .blogContainerLeft{
+        border:solid 3px $green;
+        width:60%;
+    }
+    .blogContainerRight{
+        width:30%;
+        background-color: $green;
+        right:0;
+        position:absolute;
+        top:10%;
+        padding-bottom:5%;
+    }
+}
+
+.blogContainerLeft img{
+    box-shadow: 10px 10px $green;
+}
+
+.blogContainerRight h4,
+.asideContainer h2{
+    color:$blue;
+    padding:4% 0;
+}
+
+.blogContainer p,
+.blogContainer h4,
+.blogContainer h3,
+.blogContainer li{
+    padding:0 10%;
+}
+
+.blogContainerRight li::before{
+    content: '\2022';
+    font-size:1.3rem;
+    color:$gold;
+    padding-right:2%;
+    
+}
+
+.blogRow1,
+.blogRow2{
+    display:flex;
+    width:60%;
+    padding:10px;
+    p{
+        font-size: 0.9rem;
+        line-height: 24px;
+    }
+}
+
+.blogRow1 p:first-child,
+.blogRow2 p:first-child{
+    color:$gold;
+    margin-bottom:2%;
+}
+
+.blogRow1 img,
+.blogRow2 img{
+    height: 100px;
+    width: 100px;
+    margin: 10px 20px 0 0;
+}
+
+.blogFooter button{
+    width:50%;
+}
+
 // styles for form.html
 
 .flexContainerForm{
@@ -127,7 +200,7 @@ aside{
     line-height:25px;
 }
 
-fieldset{
+.basicInfo2{
     display:flex;
     flex: 1 0 auto;
     flex-direction: column;
@@ -144,6 +217,7 @@ fieldset{
 .formRow input[type=email]{
     color:$blue;
     margin:0 0 7% 10px;
+    width:48%;
     border:none;
     background: transparent;
     border-bottom:2px solid $gold;
@@ -153,10 +227,15 @@ fieldset{
     padding:3%;
 }
 
+.blogFooter input[type=text],
+.blogFooter input[type=email]{
+    width: 29%;
+}
+
 .formRow input[type=text]:focus,
 .formRow input[type=email]:focus,
 textarea:focus{
-    background-color: $camo;
+    background-color: $green;
     border:dotted 2px $blue;
 }
 
@@ -168,12 +247,17 @@ textarea{
     margin-bottom:5%;
     font-family: 'lato';
     padding:5%;
+    width:60%;
+}
+
+.basicInfo2 textarea{
+    width:100%;
 }
 
 .basicInfo button{
-    width: 80%;
+    width: 60%;
     padding:5px;
-    margin: 0 auto;
+    margin: 0 auto 5% auto;
 }
 
 ul.social a{

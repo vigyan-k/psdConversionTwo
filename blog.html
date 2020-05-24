@@ -19,20 +19,24 @@
                 <li><a href="./form.html">Contact</a></li>
             </ul>
         </nav>
+        <h1>Blog</h1>
     </header>
     <main>
-        <h1>Blog</h1>
-        <div class="blogContainer wrapper">
+        <div class="blogContainer">
             <div class="blogContainerLeft">
-                <img src="./assets/blog2.jpg" alt="brass gong">
-                <h3>Come and discover our space</h3>
-                <p>Monday May 5th, 2019 by Saron</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis tempora, totam mollitia voluptate magni dolore dolor odit dolorem, ex alias earum! Dicta maxime quis dolores beatae ab iste tenetur sequi!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero blanditiis harum facilis beatae architecto, porro nesciunt nostrum odit culpa, eligendi fugiat quia optio nam fuga. Tempora dignissimos in accusamus nemo?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque alias asperiores illo id quae minus, veniam dolore et vitae ex sequi aspernatur aliquid voluptas quia culpa enim, labore autem.</p>
+                <div>
+                    <img class="feature" src="./assets/blog2.jpg" alt="brass gong">
+                </div>
+                <div>
+                    <h3>Come and discover our space</h3>
+                    <p>Monday May 5th, 2019 by Saron</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad corporis, ducimus ratione sed laboriosam iure nostrum qui numquam exercitationem, quis eius deserunt aut. Laboriosam eum consequuntur atque nobis doloremque deserunt, eaque quia blanditiis fugit quisquam nemo minima enim soluta ut esse aliquam voluptate. Expedita veritatis at ex maxime iure quo!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ipsum nihil maiores adipisci natus distinctio voluptatem, excepturi magnam sunt laborum nemo soluta? Soluta eveniet harum tempora, rem, consectetur reiciendis, commodi dignissimos repellendus deleniti alias veniam! Quia illo quasi beatae assumenda blanditiis cum ratione tempora, architecto alias ab inventore consequuntur quam?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore adipisci eum saepe? Consectetur eos ipsa necessitatibus adipisci, maxime qui? Obcaecati eligendi, vel necessitatibus minus animi corporis incidunt id aspernatur reiciendis voluptates libero et amet quibusdam ratione similique voluptatem porro a, dolore corrupti assumenda voluptatibus consectetur velit veritatis error? Odio, dolore.</p>
+                </div>
             </div>
             <div class="blogContainerRight">
-                <img src="./assets/blog3.jpg" alt="balanced rocks">
+                <img  class="feature2" src="./assets/blog3.jpg" alt="balanced rocks">
                 <h4>Our mission</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vitae eum maxime similique aspernatur aut?</p>
                 <h4>Recent Posts</h4>
@@ -45,34 +49,40 @@
             </div>
         </div>
     </main>
-    <aside>
-        <h2>Comments:</h2>
+    <aside class="asideBlog">
         <div class="asideContainer wrapper">
+            <h2>Comments:</h2>
             <div class="blogRow1">
-                <img src="./assets/blog4.jpg" alt="portait of man">
-                <p>Tuesday October 9th, 2019 by Davin</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta inventore a cupiditate dolore officiis molestiae, facere esse dolorem, consectetur distinctio excepturi. Accusantium molestias incidunt dolores suscipit modi reiciendis necessitatibus.</p>
+                <div>
+                    <img src="./assets/blog4.jpg" alt="portait of man">
+                </div>
+                <div>
+                    <p>Tuesday October 9th, 2019 by Davin</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta inventore a cupiditate dolore officiis molestiae, facere esse dolorem, consectetur distinctio excepturi. Accusantium molestias incidunt dolores suscipit modi reiciendis necessitatibus.</p>
+                </div>
             </div>
             <div class="blogRow2">
-                <img src="./assets/blog5.jpg" alt="two zebras">
-                <p>Wednesday October 10th, 2019 by Lisa</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam blanditiis officiis fugiat unde esse ratione earum autem voluptates nam aspernatur, obcaecati molestiae dolorem reprehenderit perferendis recusandae enim voluptatem odit!</p>
+                <div>
+                    <img src="./assets/blog5.jpg" alt="two zebras">
+                </div>
+                <div>
+                    <p>Wednesday October 10th, 2019 by Lisa</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam blanditiis officiis fugiat unde esse ratione earum autem voluptates nam aspernatur, obcaecati molestiae dolorem reprehenderit perferendis recusandae enim voluptatem odit!</p>
+                </div>
             </div>
         </div>
     </aside>
-    <footer>
-        <form action="" class="wrapper">
-            <fieldset>
-                <label class="visuallyHidden" for="name">Name</label>
-                <input type="name" name="" id="name" placeholder="Name" required>
-
-                <label class="visuallyHidden" for="email">Email</label>
-                <input type="email" name="" id="email" placeholder="Email address" required>
-
-                <label class="visuallyHidden" for="textArea">TextArea</label>
-                <input type="textArea" name="" id="textArea" placeholder="Message" required>
-
-                <button type="submit">Post Comment</button>
+    <footer class="blogFooter">
+        <form action="">
+            <fieldset class="basicInfo wrapper">
+                <div class="formRow">
+                    <label class="visuallyHidden" for="name">Name</label>
+                    <input type="text" name="" id="name" placeholder="Name" required>
+                    <label class="visuallyHidden" for="email">Email</label>
+                    <input type="email" name="" id="email" placeholder="Email address" required>
+                </div>
+                <textarea class="input2" name="" id="textarea" required placeholder="Comment"></textarea>
+                <button type="submit">Submit</button>
             </fieldset>
         </form>
     </footer>

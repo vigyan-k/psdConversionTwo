@@ -6,14 +6,14 @@
 .homeContainer{
     position: absolute;
     width:100%;
-    top:40%;
+    top:35%;
     left:0;
     img{
         float:left;
         min-width:40%;
         min-height: 40%;
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 380px;
+        max-height: 380px;
         padding-right:20px;
     }
 }
@@ -114,16 +114,23 @@ aside{
     display:flex;
     justify-content: space-between;
     position: relative;
+    height:160vh;
     .blogContainerLeft{
-        border:solid 3px $green;
         width:60%;
+        padding-bottom:5%;
+        position: absolute;
+        top:-7%;
+        p{
+            font-size:1.2rem;
+            margin-bottom:20px;
+        }
     }
     .blogContainerRight{
         width:30%;
         background-color: $green;
         right:0;
         position:absolute;
-        top:10%;
+        top:7%;
         padding-bottom:5%;
     }
 }
@@ -132,10 +139,29 @@ aside{
     box-shadow: 10px 10px $green;
 }
 
+.featureText{
+    border-right: solid 4px $green;
+    border-bottom:solid 4px $green;
+}
+
 .blogContainerRight h4,
 .asideContainer h2{
     color:$blue;
     padding:4% 0;
+}
+
+
+.shadow1{
+    position:relative;
+    height:47vh;
+}
+
+.blogContainerRight img{
+    position:absolute;
+    top:-5%;
+    width:95%;
+    height:95%;
+    right:0;
 }
 
 .blogContainer p,
@@ -218,8 +244,8 @@ aside{
     color:$blue;
     margin:0 0 7% 10px;
     width:48%;
-    border:none;
     background: transparent;
+    border:none;
     border-bottom:2px solid $gold;
     font-size:1.2rem;
     font-weight:100;

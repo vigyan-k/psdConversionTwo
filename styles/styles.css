@@ -381,7 +381,7 @@ header.blog h1 {
 
 header.form {
   background-image: url("../assets/form1.jpg");
-  height: 40vh;
+  height: 50vh;
   position: relative;
 }
 
@@ -428,7 +428,7 @@ h4 {
 .homeContainer {
   position: absolute;
   width: 100%;
-  top: 40%;
+  top: 35%;
   left: 0;
 }
 
@@ -436,8 +436,8 @@ h4 {
   float: left;
   min-width: 40%;
   min-height: 40%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 380px;
+  max-height: 380px;
   padding-right: 20px;
 }
 
@@ -561,11 +561,19 @@ aside {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  height: 160vh;
 }
 
 .blogContainer .blogContainerLeft {
-  border: solid 3px #555F02;
   width: 60%;
+  padding-bottom: 5%;
+  position: absolute;
+  top: -7%;
+}
+
+.blogContainer .blogContainerLeft p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .blogContainer .blogContainerRight {
@@ -573,7 +581,7 @@ aside {
   background-color: #555F02;
   right: 0;
   position: absolute;
-  top: 10%;
+  top: 7%;
   padding-bottom: 5%;
 }
 
@@ -582,10 +590,28 @@ aside {
           box-shadow: 10px 10px #555F02;
 }
 
+.featureText {
+  border-right: solid 4px #555F02;
+  border-bottom: solid 4px #555F02;
+}
+
 .blogContainerRight h4,
 .asideContainer h2 {
   color: #FAFFFE;
   padding: 4% 0;
+}
+
+.shadow1 {
+  position: relative;
+  height: 47vh;
+}
+
+.blogContainerRight img {
+  position: absolute;
+  top: -5%;
+  width: 95%;
+  height: 95%;
+  right: 0;
 }
 
 .blogContainer p,
@@ -681,8 +707,8 @@ aside {
   color: #FAFFFE;
   margin: 0 0 7% 10px;
   width: 48%;
-  border: none;
   background: transparent;
+  border: none;
   border-bottom: 2px solid #FFC600;
   font-size: 1.2rem;
   font-weight: 100;

@@ -594,6 +594,12 @@ h4 {
   padding-bottom: 5%;
 }
 
+.test3 {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
 .blogContainerLeft img {
   -webkit-box-shadow: 10px 10px #555F02;
           box-shadow: 10px 10px #555F02;

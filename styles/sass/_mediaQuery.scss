@@ -1,0 +1,158 @@
+@media (max-width: 1100px){
+    h1{
+        color:pink;
+    }
+
+    .flexContainerForm{
+        height:auto;
+        flex-wrap:wrap;
+        padding:3% 0;
+        .flexContainerFormLeft{
+            width:auto;
+        }
+    }
+
+    .basicInfo2{
+        position:static;
+    }
+}
+
+@media (max-width: 1060px){
+    h1{
+        color:orange;
+    }
+
+    .flexContainerForm{
+        display:block;
+    }
+
+    .basicInfo2{
+        margin-bottom:20px;
+        width:100%;
+    }
+
+}
+
+@media (max-width: 980px){
+    h1{
+        color:red;
+    }
+
+    .blog{
+        height:50vh;
+    }
+
+    .blogContainer{
+        height:auto;
+        display:block;
+        .blogContainerLeft img{
+            width:60%;
+        }
+        .blogContainerLeft,
+        .blogContainerRight{
+            position:static;
+            width:100%;
+        }
+    }
+
+    .featureText{
+        border:none;
+    }
+
+    .blogContainerRight{
+        display:flex;
+        padding:5% 10% 0 10%;
+    }
+
+    .shadow1{
+        display:flex;
+        justify-content: center;
+        height:auto;
+        img{
+            position:static;
+        }
+    }
+
+    .blogRow1,
+    .blogRow2{
+        width: 100%;
+    }
+
+    .blogFooter{
+        padding-top:5%;
+        button{
+            width:100%;
+        }
+    }
+
+    .blogFooter input[type=text],
+    .blogFooter input[type=email]{
+        width: 48%;
+    }
+
+    textarea{
+        width:100%;
+    }
+}   
+
+@media (max-width:790px){
+    h1{
+        color:blue;
+        position:static;
+        text-align: center;
+        border:red solid 2px;
+    }
+
+    header ul li:nth-child(6){
+        display:block;
+    }
+
+    header ul li .ham{
+        background-color: transparent;
+        font-size:2.5rem;
+        color:$blue;
+        transition:ease 300ms;
+    }
+
+    .ham:hover{
+        color:$gold;
+    }
+
+    header ul li:nth-child(2),
+    header ul li:nth-child(3),
+    header ul li:nth-child(4),
+    header ul li:nth-child(5){
+        visibility: hidden;
+    }
+
+    .flexContainerFormRight{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 774px){
+    h1{
+        color:purple;
+    }
+
+    .basicInfo2{
+        width: auto;
+        height: auto;
+    }
+
+    .formRow{
+        display:flex;
+    }
+
+    .asideBlog h2{
+        text-align: center;
+    }
+}
+
+@media (max-width:480px){
+    h1{
+        color:green;
+    }
+}

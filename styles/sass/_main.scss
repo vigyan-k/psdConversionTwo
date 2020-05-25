@@ -59,10 +59,6 @@
     }
 }
 
-aside{
-    height:auto;
-}
-
 .homeRow1,
 .homeRow2{
     display:flex;
@@ -150,7 +146,6 @@ aside{
     padding:4% 0;
 }
 
-
 .shadow1{
     position:relative;
     height:47vh;
@@ -234,16 +229,16 @@ aside{
     box-shadow: 15px 15px $gold;
     padding:3%;
     position: absolute;
-    top:-85%;
+    top:-100%;
     width:700px;
-    height:400px
+    height:400px;
 }
 
 .formRow input[type=text],
 .formRow input[type=email]{
     color:$blue;
     margin:0 0 7% 10px;
-    width:48%;
+    width:45%;
     background: transparent;
     border:none;
     border-bottom:2px solid $gold;

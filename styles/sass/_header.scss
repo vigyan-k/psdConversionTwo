@@ -28,6 +28,10 @@ header ul li:first-child a{
     font-weight: 400;
 }
 
+header ul li:nth-child(6){
+    display:none;
+}
+
 header.home{
     position: relative;
     background-image:url('../assets/home1.jpg');

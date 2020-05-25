@@ -268,6 +268,11 @@ button:hover {
   background: #262725;
 }
 
+button:focus {
+  border: dotted #FAFFFE 2px;
+  background: #262725;
+}
+
 a {
   -webkit-transition: ease 300ms;
   transition: ease 300ms;
@@ -360,6 +365,10 @@ header ul li:first-child a {
   font-family: 'dokdo';
   font-size: 41.5px;
   font-weight: 400;
+}
+
+header ul li:nth-child(6) {
+  display: none;
 }
 
 header.home {
@@ -493,10 +502,6 @@ h4 {
 .blockRow1 .block,
 .blockRow2 .block {
   width: 50%;
-}
-
-aside {
-  height: auto;
 }
 
 .homeRow1,
@@ -697,7 +702,7 @@ aside {
           box-shadow: 15px 15px #FFC600;
   padding: 3%;
   position: absolute;
-  top: -85%;
+  top: -100%;
   width: 700px;
   height: 400px;
 }
@@ -706,7 +711,7 @@ aside {
 .formRow input[type=email] {
   color: #FAFFFE;
   margin: 0 0 7% 10px;
-  width: 48%;
+  width: 45%;
   background: transparent;
   border: none;
   border-bottom: 2px solid #FFC600;
@@ -768,4 +773,158 @@ ul.social a {
 .copyright {
   background: #262725;
   text-align: center;
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    color: pink;
+  }
+  .flexContainerForm {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 3% 0;
+  }
+  .flexContainerForm .flexContainerFormLeft {
+    width: auto;
+  }
+  .basicInfo2 {
+    position: static;
+  }
+}
+
+@media (max-width: 1060px) {
+  h1 {
+    color: orange;
+  }
+  .flexContainerForm {
+    display: block;
+  }
+  .basicInfo2 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  h1 {
+    color: red;
+  }
+  .blog {
+    height: 50vh;
+  }
+  .blogContainer {
+    height: auto;
+    display: block;
+  }
+  .blogContainer .blogContainerLeft img {
+    width: 60%;
+  }
+  .blogContainer .blogContainerLeft,
+  .blogContainer .blogContainerRight {
+    position: static;
+    width: 100%;
+  }
+  .featureText {
+    border: none;
+  }
+  .blogContainerRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5% 10% 0 10%;
+  }
+  .shadow1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+  }
+  .shadow1 img {
+    position: static;
+  }
+  .blogRow1,
+  .blogRow2 {
+    width: 100%;
+  }
+  .blogFooter {
+    padding-top: 5%;
+  }
+  .blogFooter button {
+    width: 100%;
+  }
+  .blogFooter input[type=text],
+  .blogFooter input[type=email] {
+    width: 48%;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 790px) {
+  h1 {
+    color: blue;
+    position: static;
+    text-align: center;
+    border: red solid 2px;
+  }
+  header ul li:nth-child(6) {
+    display: block;
+  }
+  header ul li .ham {
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: #FAFFFE;
+    -webkit-transition: ease 300ms;
+    transition: ease 300ms;
+  }
+  .ham:hover {
+    color: #FFC600;
+  }
+  header ul li:nth-child(2),
+  header ul li:nth-child(3),
+  header ul li:nth-child(4),
+  header ul li:nth-child(5) {
+    visibility: hidden;
+  }
+  .flexContainerFormRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 774px) {
+  h1 {
+    color: purple;
+  }
+  .basicInfo2 {
+    width: auto;
+    height: auto;
+  }
+  .formRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .asideBlog h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    color: green;
+  }
 }

@@ -536,7 +536,7 @@ h4 {
 
 .text,
 .text2 {
-  padding: 5%;
+  padding: 3%;
 }
 
 .text2 {
@@ -556,6 +556,10 @@ h4 {
   width: 40%;
   bottom: -10%;
   right: 0;
+}
+
+.pic2Placeholder {
+  display: none;
 }
 
 .blogContainer {
@@ -776,8 +780,25 @@ ul.social a {
 }
 
 @media (max-width: 1100px) {
-  h1 {
-    color: pink;
+  .homeRow1 img,
+  .homeRow2 img {
+    position: static;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 5px #FFC600 solid;
+  }
+  .homeRow2 .pic2 img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .text,
+  .text2 {
+    padding: 3%;
+  }
+  .text p,
+  .text2 p {
+    font-size: 1rem;
   }
   .flexContainerForm {
     height: auto;
@@ -794,8 +815,11 @@ ul.social a {
 }
 
 @media (max-width: 1060px) {
-  h1 {
-    color: orange;
+  .text p,
+  .text2 p,
+  .text button,
+  .text2 button {
+    font-size: 0.9rem;
   }
   .flexContainerForm {
     display: block;
@@ -807,8 +831,24 @@ ul.social a {
 }
 
 @media (max-width: 980px) {
-  h1 {
-    color: red;
+  .homeRow1,
+  .homeRow2 {
+    display: block;
+    margin: 0 5%;
+  }
+  .pic2 {
+    display: none;
+  }
+  .pic2Placeholder {
+    display: block;
+  }
+  .pic1,
+  .text,
+  .pic2,
+  .text2,
+  .pic2Placeholder {
+    width: 100%;
+    text-align: center;
   }
   .blog {
     height: 50vh;
@@ -867,10 +907,8 @@ ul.social a {
 
 @media (max-width: 790px) {
   h1 {
-    color: blue;
     position: static;
     text-align: center;
-    border: red solid 2px;
   }
   header ul li:nth-child(6) {
     display: block;
@@ -906,8 +944,57 @@ ul.social a {
 }
 
 @media (max-width: 774px) {
-  h1 {
-    color: purple;
+  .homeContainer {
+    padding-top: 10%;
+    display: block;
+    position: static;
+  }
+  .homeContainer span {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .homeContainer img {
+    display: none;
+  }
+  .homeContainer2 > div {
+    display: block;
+  }
+  .homeContainer2 > div img {
+    text-align: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 5px solid #555F02;
+    margin: 3% auto;
+  }
+  .homeContainer2 div:nth-child(2) {
+    text-align: center;
+  }
+  .gridContainer > div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gridContainer > div img {
+    height: 75%;
+    width: 75%;
+    margin: 3% 0;
+    padding: 0;
+    -webkit-box-shadow: 10px 10px #FFC600;
+            box-shadow: 10px 10px #FFC600;
+  }
+  .blockRow1,
+  .blockRow2 {
+    display: block;
+  }
+  .blockRow1 .block,
+  .blockRow2 .block {
+    width: 100%;
   }
   .basicInfo2 {
     width: auto;
@@ -924,7 +1011,18 @@ ul.social a {
 }
 
 @media (max-width: 480px) {
-  h1 {
-    color: green;
+  .homeContainer {
+    padding-left: 2%;
+  }
+  .homeContainer2 > div,
+  .block {
+    text-align: center;
+    padding-left: 5%;
+    margin: 2% 0;
+  }
+  .greenIcon {
+    display: block;
+    padding: 0 45%;
+    width: 100%;
   }
 }

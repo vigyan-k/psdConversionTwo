@@ -476,6 +476,16 @@ h4 {
   margin-left: 30px;
 }
 
+.trio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trio img {
+  min-width: 25%;
+}
+
 .gridContainer > div {
   display: -webkit-box;
   display: -ms-flexbox;

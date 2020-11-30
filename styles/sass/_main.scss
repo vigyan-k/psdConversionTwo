@@ -38,6 +38,13 @@
     }
 }
 
+.trio{
+    display:flex;
+    img{
+        min-width: 25%;
+    }
+}
+
 .gridContainer>div{
     display:flex;
     padding:10% 0;

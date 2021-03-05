@@ -558,12 +558,12 @@ h4 {
 }
 
 .pic1 img {
-  width: 40%;
+  min-width: 40%;
   top: -5%;
 }
 
 .pic2 img {
-  width: 40%;
+  min-width: 40%;
   bottom: -10%;
   right: 0;
 }
